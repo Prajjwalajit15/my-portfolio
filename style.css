@@ -1,0 +1,183 @@
+body {
+    font-family: "Handlee", cursive;
+  background-color:  #11071F;
+  color: white;
+}
+
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #ff6f00 !important;
+}
+
+.navbar-toggler {
+  border-color: white;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22' /%3e%3c/svg%3e");
+}
+
+ 
+.profile-wrapper {
+  background-image: url('/assets/Gradient.png');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 15px;
+  flex-shrink: 0;
+}
+
+.profile-image {
+  width: 100px;
+  height: 130px;
+  border-radius: 10px;
+  display: block;
+  object-fit: cover;
+}
+ 
+.cover {
+  color: #7127BA;
+  border: 2px solid #e8e4ed;
+  padding: 5px 12px;
+  border-radius: 50%;
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  min-width: 40px;
+}
+ 
+@media (max-width: 768px) {
+  .profile-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .profile-image {
+    width: 90px;
+    height: 120px;
+  }
+
+  .cover {
+    font-size: 0.9rem;
+    padding: 4px 10px;
+    min-width: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  #about h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  #about {
+    text-align: center;
+    padding-left: 0 !important;
+  }
+}
+
+@media (max-width: 572px){
+    .profile-wrapper{
+        display: none;
+    }
+}
+ 
+.skills-section {
+  background-color: #1A0B2E;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.skills-section h2 {
+  font-size: 2.2rem;
+  border-bottom: 2px solid #7127BA;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+}
+
+.skills-section h5 {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #FFA500;
+  letter-spacing: 1px;
+}
+
+.skills-section ul {
+  padding-left: 0;
+}
+
+.skills-section ul li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  line-height: 1.8;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.skills-section ul li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+  color: #7127BA;
+  font-size: 1rem;
+}
+
+.skills-section ul li:hover {
+  color: #ff9800;
+  transform: translateX(5px);
+}
+
+ 
+
+
+
+.projects-section {
+  background-color: #1A0B2E;
+  margin-top: 100px;
+}
+
+.project-card {
+  background-color: #27114b;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(113, 39, 186, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card a.btn {
+  transition: all 0.3s ease-in-out;
+}
+
+.project-card a.btn:hover {
+  transform: scale(1.05);
+}
+
+.contact-section {
+  background-color: #1A0B2E;
+  border-top: 2px solid #7127BA;
+}
+
+.contact-section input,
+.contact-section textarea {
+  background-color: #27114b;
+  border: 1px solid #7127BA;
+  color: white;
+}
+
+.contact-section input::placeholder,
+.contact-section textarea::placeholder {
+  color: #bbb;
+}
+
+.contact-section .form-control:focus {
+  border-color: #ff9800;
+  box-shadow: none;
+}
