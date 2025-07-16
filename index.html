@@ -56,7 +56,7 @@
   </div>
  
   <div class="d-flex flex-column justify-content-between" style="max-width: 600px;">
-    <p>Hello! I Am <strong>Prajjwal Ajit</strong></p>
+    <p>Hello! I Am <h1>Prajjwal Ajit</h1></p>
     <p>A Developer who</p>
     <div class="fs-3 fs-md-1 fw-bold">
       <div>Judges a book</div>
@@ -67,6 +67,45 @@
     <p>Because if the cover does not impress you what else can?</p>
   </div>
 </div>
+
+ 
+ 
+<section class="container my-5" id="educationCertifications">
+  <div class="edu-card p-5">
+    <h3 class="section-title mb-5"><i class="bi bi-mortarboard-fill me-2"></i>Education & Certifications</h3>
+
+    <!-- Education -->
+    <div class="edu-block mb-5">
+      <h4 class="edu-subtitle"><i class="bi bi-book-fill me-2"></i>Education</h4>
+      <div class="edu-entry">
+        <h5>🎓 Shri Ram Institute Of Technology</h5>
+        <p>B.Tech in Civil Engineering — <strong>CGPA: 7.5</strong></p>
+        <span>2019 – 2023 | Jabalpur, India</span>
+      </div>
+      <div class="edu-entry">
+        <h5>🏫 Excellence School</h5>
+        <p>Senior Secondary (PCM)</p>
+        <span>2018 – 2019 | Seoni, M.P.</span>
+      </div>
+      <div class="edu-entry">
+        <h5>🏫 Arunanchal Public School</h5>
+        <p>Matriculation</p>
+        <span>2015 – 2016 | Seoni, M.P.</span>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <div class="cert-block">
+      <h4 class="edu-subtitle"><i class="bi bi-award-fill me-2"></i>Certifications</h4>
+      <div class="edu-entry">
+        <h5>💻 MERN Stack Web Developer</h5>
+        <p>2024 | AccioJob, W Noida, India</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 
 <div id="about" class="d-flex flex-wrap justify-content-center align-items-center px-3 py-1 text-white" style="min-height: 70vh; background-color: #1A0B2E;">
@@ -80,13 +119,13 @@
   </div>
  
   <div class="text-center mt-4 mt-md-0 ms-md-5">
-    <img 
-      src="https://www.shutterstock.com/image-vector/3d-programmer-male-character-vector-600nw-2265029485.jpg" 
-      alt="image"
-      class="img-fluid" 
-      style="max-width: 250px; height: auto;"
-    />
-  </div>
+  <img 
+    src="https://www.shutterstock.com/image-vector/3d-programmer-male-character-vector-600nw-2265029485.jpg" 
+    alt="Developer Image"
+    class="img-fluid custom-dev-img"
+  />
+</div>
+
 
 </div>
 
@@ -215,15 +254,15 @@
   <form id="contactForm">
     <div class="mb-3">
       <label for="name" class="form-label text-white">Name</label>
-      <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+      <input type="text" class="form-control" id="name" placeholder="Your Name">
     </div>
     <div class="mb-3">
       <label for="email" class="form-label text-white">Email</label>
-      <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+      <input type="email" class="form-control" id="email" placeholder="you@example.com">
     </div>
     <div class="mb-3">
       <label for="message" class="form-label text-white">Message</label>
-      <textarea class="form-control" id="message" rows="4" placeholder="Your message..." required></textarea>
+      <textarea class="form-control" id="message" rows="4" placeholder="Your message..." ></textarea>
     </div>
     <button type="submit" class="btn btn-outline-warning">Send Message</button>
   </form>
@@ -246,19 +285,79 @@
 
       <form id="modalForm">
   <div class="modal-body">
-    <div class="mb-3">
-      <label for="modalName" class="form-label">Your Name</label>
-      <input type="text" class="form-control" id="modalName" required />
-    </div>
+    
+    <!-- Name -->
+<div class="mb-3">
+  <div id="errorModalName" class="text-danger mb-1"></div>
+  <label for="modalName" class="form-label">Your Name</label>
+  <input type="text" class="form-control" id="modalName" />
+</div>
 
-    <div class="mb-3">
-      <label for="modalEmail" class="form-label">Your Email</label>
-      <input type="email" class="form-control" id="modalEmail" required />
-    </div>
+<!-- Email -->
+<div class="mb-3">
+  <div id="errorModalEmail" class="text-danger mb-1"></div>
+  <label for="modalEmail" class="form-label">Your Email</label>
+  <input type="email" class="form-control" id="modalEmail" />
+</div>
 
+<!-- Message -->
+<div class="mb-3">
+  <div id="errorModalMessage" class="text-danger mb-1"></div>
+  <label for="modalMessage" class="form-label">Project Details</label>
+  <textarea class="form-control" id="modalMessage" rows="3"></textarea>
+</div>
+
+<!-- Radio -->
+<div class="mb-3">
+  <div id="errorProjectType" class="text-danger mb-1"></div>
+  <label class="form-label">Project Type</label><br />
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="projectType" id="frontend" value="Frontend" />
+    <label class="form-check-label" for="frontend">Frontend</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="projectType" id="fullstack" value="Fullstack" />
+    <label class="form-check-label" for="fullstack">Fullstack</label>
+  </div>
+</div>
+
+<!-- Technologies -->
+<div class="mb-3">
+  <div id="errorTechnologies" class="text-danger mb-1"></div>
+  <label class="form-label">Technologies Needed</label><br />
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="React" id="techReact" />
+    <label class="form-check-label" for="techReact">React</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="Node.js" id="techNode" />
+    <label class="form-check-label" for="techNode">Node.js</label>
+  </div>
+</div>
+
+<!-- Budget -->
+<div class="mb-3">
+  <div id="errorBudget" class="text-danger mb-1"></div>
+  <label for="budget" class="form-label">Estimated Budget</label>
+  <select class="form-select" id="budget">
+    <option value="">Select</option>
+    <option value="less-5000">Less than ₹5,000</option>
+    <option value="5000-10000">₹5,000 - ₹10,000</option>
+    <option value="10000+">More than ₹10,000</option>
+  </select>
+</div>
+
+<!-- Deadline -->
+<div class="mb-3">
+  <div id="errorDeadline" class="text-danger mb-1"></div>
+  <label for="deadline" class="form-label">Project Deadline</label>
+  <input type="date" class="form-control" id="deadline" />
+</div>
+
+    
     <div class="mb-3">
-      <label for="modalMessage" class="form-label">Project Details</label>
-      <textarea class="form-control" id="modalMessage" rows="3" required></textarea>
+      <label for="fileUpload" class="form-label">Attach Reference File</label>
+      <input type="file" class="form-control" id="fileUpload">
     </div>
   </div>
 
@@ -267,6 +366,7 @@
     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
   </div>
 </form>
+
 
     </div>
   </div>

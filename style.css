@@ -84,7 +84,100 @@ body {
         display: none;
     }
 }
+
  
+.edu-card {
+  background: rgba(30, 30, 30, 0.85);
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 0 30px rgba(113, 39, 186, 0.4);
+  border-left: 5px solid #7127BA;
+  color: #fff;
+  transition: all 0.4s ease;
+  padding: 2rem;
+}
+
+ 
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #7127BA;
+  text-shadow: 1px 1px 3px rgba(113, 39, 186, 0.6);
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #7127BA;
+  margin-top: 10px;
+}
+
+ 
+.edu-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px dashed #7127BA;
+  padding-bottom: 0.5rem;
+  color: #e0d6f6;
+}
+
+ 
+.edu-entry {
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.5rem;
+  border-left: 3px solid #9b5be4;
+  background-color: rgba(113, 39, 186, 0.05);
+  border-radius: 10px;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-entry:hover {
+  background-color: rgba(113, 39, 186, 0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 0 15px rgba(113, 39, 186, 0.3);
+}
+
+ 
+.edu-entry h5 {
+  margin-bottom: 0.25rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.edu-entry p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  color: #d1c7ec;
+}
+
+.edu-entry span {
+  font-size: 0.85rem;
+  color: #a39ac5;
+  display: block;
+  margin-top: 5px;
+}
+
+.custom-dev-img {
+  max-width: 250px;
+  height: auto;
+  opacity: 0.85;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(113, 39, 186, 0.4);
+  mix-blend-mode: lighten; /* Creates a nice blending effect with background */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-dev-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(113, 39, 186, 0.6);
+}
+
+
 .skills-section {
   background-color: #1A0B2E;
   padding-top: 60px;
